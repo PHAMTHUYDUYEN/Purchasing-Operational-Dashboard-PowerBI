@@ -130,5 +130,5 @@ This is implementation and review stage. Prototype and Review dashboard multiple
  
 ### 5. Vendor Management
 - _Recommendations_:
-  - Sign principle (strategic) agreements with **_high-spend vendors_** to **_negotiate lower prices_**.
+  - Sign principle **_(strategic) agreements_** with **_high-spend vendors_** to **_negotiate lower prices_**.
   - **_Diversify Vendors_**: Address the issue of 113 products being sourced from one single vendor by finding additional vendors for these products. This will enable price comparisons and selection of the most cost-effective options.
