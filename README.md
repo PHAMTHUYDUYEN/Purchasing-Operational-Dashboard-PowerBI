@@ -12,69 +12,29 @@ AdventureWorks database supports standard online transaction processing scenario
 
 ## **II.DESIGN THINKING APPROACH**
 ### Stage 1: Empathize
-|5W1H|---|
-|---|---|
-|Who will be viewing this Dashboard?|	Senior managers (CEO, Purchasing Manager, Finance Manager)|
-|If we had to choose only one key Stakeholder, who would it be?| Purchasing Manager|
-|What problem does this Dashboard solve?	| 1. Purchasing Department Overall Performance<br>2. Forecast upcoming purchasing demand<br>3. Vendor quality assessment|
-|Describe the problem in one sentence |	Help purchasing manager to grasp the Department Overall Performance, and Details of inventory, vendor to develop optimized operational strategy.|
-|When and where will Stakeholders view this Dashboard?| 1. When review department performance in weekly BOD meeting.<br>2. Daily performance review with team, in team meeting.<br>3. Use personally when developing plans and allocating tasks for team members.|
-|Why do stakeholders need this Dashboard?| 1. To optimize department performance.<br>2. To develop purchasing plan.|
-|How have stakeholders been achieving their goals so far?	|Know the performance <br>--> Find aspect that can be optimized <br>--> Develop Action plan to implement the optimization|
 
-|Empathy Map|---|
-|---|---|
-|**Thinking and feeling**<br>_What does the stakeholder think and feel?_|	I'm facing pressure from the CEO, but I believe that there're some aspects my deparment did great but some aspects can be optimized too.|
-|**Seeing**<br>_What does the stakeholder see?_|	Purchasing Department was claimed of its poor performance.|
-|**Saying and doing**<br>_What does the stakeholder say and do?_	|"Which aspect in purchasing process should I optimized?".|
-|**Pains**<br>_What are the biggest problems and challenges?_|1. How is the department's overall performance?<br>- Is the product cost optimized?<br>- Is the delivery on time?<br>- Is the product quantity sufficiently purchased? <br>- Is the product supplied meet quality standard?<br>2. If any of the above being No, then where the wrong is? How to fix it via choosing vendor and forecasting purchasing demand?|
-|**Gains**<br>_What are the opportunities and benefits?_|	By spotting the unoptimized parts, Purchasing manager can enhance the overall performance of the department.|
+<img width="1000" alt="Vendor" src="https://github.com/user-attachments/assets/22a3078c-00d6-468c-a4e5-2c9e93b6eba4">
+
+<img width="650" alt="Vendor" src="https://github.com/user-attachments/assets/c1eb7273-e0d7-43ca-81c9-9a76ad8b6352">
 
 ### Stage 2: Define Point of View
-|Northstar Metric|---|
-|---|---|
-|What VALUE you want to measure?|Expenditure to have products as inventory (buying, transporting).|
-|WHEN the value DELIVERY SUCCESS?|When the product is considered inventory.|
-|Northstar Metric Name|Spend|
-|WHY do you choose this metric?|Purchasing department activities should be based on spend optimization. The more optimized the spending, the more efficiently capital is used.|
 
-Dimension Data Group
-|**Group 1** - Overview|**Group 2** - Inventory Management|**Group 3** - Vendor Management|
-|---|:---:|:---:|
-|_Product: Price, Quality, Quantity<br>Logistics: Freight, Delivery Time, Shipment Modes_|	_Available stock<br>Unsafe stock<br>Lead time<br>Due date_|_Number of vendors<br>Vendor ratings<br>Vendor diversity<br>Lead time_|
+<img width="480" alt="Vendor" src="https://github.com/user-attachments/assets/182f85bf-d8ac-4187-88d2-7c74d4b518ea"> \
 
-Define Point of View
-|View	|Description	|	Why	|
-|---|:---:|---|
-|**View1**| Overview|	Overall Performance of Purchasing Department.	|			
-|**View2**| Inventory Management|	Current Inventory Status and Demand of Products to buy.	|		
-|**View3**| Vendor Management|	Assess the vendor quality to optimize the product price, lead time.|
+<img width="500" alt="Vendor" src="https://github.com/user-attachments/assets/e8dc8304-61aa-4f10-8d47-2139c33604a7"> \
 
-Growth Formula
-|Northstar Metric:|Spend|
-|---|---|
-|View 1 breakdown	| Total spend overall<br>Spend by product, vendor<br>Freight by product|
-|View 2 breakdown	| Spend by inventory<br>Spend by inventory need to buy	|
-|View 3 breakdown	| Spend by vendor |
+<img width="400" alt="Vendor" src="https://github.com/user-attachments/assets/61cd34a2-fe9a-4ba6-8cd1-69e1d5e5ce86">
+
 
 ### Stage 3: Ideate
 Brainstorming
-|Idea Name|Layer 0 dimension| Layer 1 dimension|Layer 2 dimension|
-|---|---|---|---|
-|View 1: Overview|- Total spend<br>- Total PO<br>- %PO Delivered on-time<br>- %PO revised<br>- AVG revision time<br>- %PO with price optimized<br>- Total optimized value<br>- Total freight<br>- Total product cost|- Spend by Cost type (product, freight, tax)<br>- Spend by Product Category<br>- Reject rate by Product<br>- Reject qty by Product <br>- Freight by Shipment mode|- Vendor by Reject rate by Product|
-|View 2: Inventory Management|- Total unsafe product items<br>- Total safe product items|- Current stock quantity by product <br>- Quantity need to order by product<br>- MOQ by product<br>- Standard price by product<br>- Lead time by product|  |
-|View 3: Vendor Management	|- Total number of vendors <br>- Number of active/inactive vendors<br>- Total purchase products|- Spend by vendor<br>- Vendor classification (Price vs Reject rate)<br>- Vendor Count by product<br>- Product, Vendor Name by Vendor Count<br>- Credit rating, preference, active status, lead time, on-time delivery rate, availability rate, reject rate by vendor<br>- Product name, price by vendor|  |
+
+<img width="650" alt="Vendor" src="https://github.com/user-attachments/assets/3ec97a3a-b387-4fa9-82e3-ee9f2bdcbc72">
 
 Structure idea
-|   |	Metric 1 | Metric 2	| Metric 3	| Metric 4 |Metric 5 |
-|---|---|---|---|---|---|
-|Scorecard	|Spend	|Number of PO	|PO Accuracy	|On-time delivery Rate	|Optimized Value|
 
-|Idea Name	| Highly important info|	Important info | Detailed info |
-|---|---|---|---|
-|View 1|- Total spend<br>- Total PO<br>- %PO Delivered on-time<br>- %PO revised<br>- AVG revision time<br>- %PO with price optimized<br>- Total optimized value|- Spend by Cost type (product, freight, tax)<br>- Spend by Product Category<br>- Freight by Shipment mode<br>- Total Freight<br>- Total product cost|- Reject rate by Product<br>- Reject qty by Product<br>- Vendor by Reject rate by Product|
-|View 2|- Total unsafe product items<br>- Total safe product items|   |- Current stock quantity by product<br>- quantity need to order by product<br>- MOQ by product<br>- Standard price by product<br>- Lead time by product|
-|View 3	|- Total number of vendors<br>- Number of active/inactive vendors|- Spend by vendor<br>- Vendor classification (Price vs Reject rate)<br>- Total purchase products<br>- Vendor count by product|- Product, Vendor Name by Vendor Count<br>- Credit rating, preference, active status, lead time, on-time delivery rate, availability rate, reject rate by vendor<br>- Product name, price by vendor|	
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/24eac247-91d4-4c82-a28b-58e53ff9cc63" />
+
 
 ### Stage 4: Prototype & Review
 This is implementation and review stage. Prototype and Review dashboard multiple times to achieve the final dashboard.
